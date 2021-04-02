@@ -1,8 +1,8 @@
 
-const superbowlWin = (a) => {
-    if(a.find( o => o.result === "W")) {
-        return a.find( o => o.result === "W").year;
+const superbowlWin = (resultObjectArray) => {
+    if(resultObjectArray.find( resultObject => resultObject.result === "W")) {
+        return resultObjectArray.find( resultObject => resultObject.result === "W").year;
     } else {
-        return a.find( o => o.result === "W");
+        return resultObjectArray.find( resultObject => resultObject.result === "W");
     }
 }
